@@ -243,3 +243,21 @@ input[type="radio"]:checked + label span {
     border-bottom: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .jumbotron{
+    padding: 20px 30px 20px 30px !important;
+  }
+
+  p.lead{
+    margin: 0;
+  }
+
+  .sectionIntro{
+    margin-top:0px;
+  }
+
+  .sectionResults{
+    margin-top: 0px;
+  }
+}

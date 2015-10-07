@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     if(mode == "question"){
       $('.questions').each( function(i){
-          var bottom_of_object = $(this).offset().top;
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
           var bottom_of_window = $(window).scrollTop() + $(window).height()/2;
 
           /* If the object is completely visible in the window, fade it it */
@@ -39,7 +39,7 @@ $(document).ready(function() {
   });
 
   var start = $('#start');
-  $('html').css('overflow-y', 'hidden');
+  //$('html').css('overflow-y', 'hidden');
 
   start.on('click', function(){
     $('.questions').each(function(){
